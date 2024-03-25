@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Bibiateka</title>
+  <!--Bibiateka icon -->
+  <link rel="icon" href="#" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.css">
+  
+  <style>
+html, 
+body,
+header,
+.carousel{
+    height: 100vh;
+     }
+     @media (max-width: 740px){
+html, 
+body,
+header,
+.carousel{
+    height: 100vh;
+     }
+    }
+    @media (min-width: 800px) and (max-width: 850px){
+        html, 
+body,
+header,
+.carousel{
+    height: 100vh;
+     }
+    }
+  </style>
+</head>
+<script>
+  function showResult(str) {if (str.length==0) {document.getElementById("livesearch").innerHTML="";return;}
+  if (window.XMLHttpRequest) {xmlhttp=new XMLHttpRequest();}else{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
+   xmlhttp.onreadystatechange=function() {if (xmlhttp.readyState==4 && xmlhttp.status==200) 
+    {document.getElementById("livesearch").innerHTML=xmlhttp.responseText;}}
+   xmlhttp.open("GET","livesearch.php?q="+str,true); xmlhttp.send();}
+  </script>
+  <script type="text/javascript">
+function tolowcase(element){
+   var str = element.value;
+   var res = str.toLowerCase();
+   element.value = res;
+}
+</script>
+<body style='overflow-x:hidden;'>
+
+ <!-- Navbar -->
+ 
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div id="home" class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#" target="_blank">
+        <strong>Bibiateka</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Главная
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#bl" target="_blank">Книги/Комиксы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map-container-google-9" target="_blank">Где мы находимся</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="#" class="nav-link" target="_blank">
+                <i class="fab fa-vk"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#call" class="nav-link border border-light rounded"
+              target="_blank">
+              <i class="fas fa-phone"></i>Связь с нами
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+
+    </div>
+  </nav>
+
+ 
+                <!--Carusel-->
+  
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('https://c.pxhere.com/photos/7c/23/architecture_library_window_book_arch-138850.jpg!d'); 
+        background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Bibiateka</strong>
+              </h1>
+
+              <p>
+                <strong>Наша библиотека лучшая во вселенной!</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Вы можете посмотреть наш каталог и убедиться сами в подленности оригиналов.</strong>
+              </p>
+
+              <a target="_blank" href="#bl" class="btn btn-outline-white btn-lg">
+                Каталог
+                <i class="fas fa-dolly-flatbed"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://greatgamer.ru/images/articles_rubric/7/articles_rubric_kinodesant_image_465.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>"Звездные войны: Скайуокер восход"</strong>
+              </h1>
+
+              <p>
+                <strong>Для любителей саги звездных войн, предлагаем вам новую книгу, в которой наконец вы узнаете конец истории.</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Совет: для тех кто не читал прошлые серии книг, настоятельно рекомендуется к прочтению с самого начала.</strong>
+              </p>
+
+              <a target="_blank" href="star-wars.html" class="btn btn-outline-white btn-lg">
+                На страницу книги
+                <i class="fas fa-book-reader ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://cdn.igromania.ru/mnt/news/2/a/0/d/3/0/89332/741418dd2073450a_1920xH.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Новый комикс "ТЫ ДЭДПУЛ!"</strong>
+              </h1>
+
+              <p>
+                <strong>Всем привет я дэдпул. Про меня вышел новый комикс и я прошу вас нажать на кнопочку, иначе обижусь</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Говорят там можно быдет поиграть со мной в игры!</strong>
+              </p>
+
+              <a target="_blank" href="ded.html" class="btn btn-outline-white btn-lg">
+                Пойдем читать меня
+                <i class="fas fa-book-reader ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Navbar Catalog-->
+  
+  <main>
+    <div id="bl">
+      <div class="container">
+      
+    
+      
+    
+     
+      
+    
+      
+      <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark unique-color-dark mt-3 mb-5 pt-4">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#bl">Каталог:</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto text-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-filter="all">Всё
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-filter="witcher">Ведьмак</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-filter="dc">Комиксы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-filter="star-wars">Звездные войны</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-filter="ru">Русская литература</a>
+      </li>
+
+
+
+    </ul>
+    <!-- Links -->
+    
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+<div id="poisk">
+  <form>
+      <input type="text" size="30" onkeyup="tolowcase(this),showResult(this.value)" class="who"><div id="livesearch"></div>
+    </div>
+  </form>
+  
+<!--Section-->
+
+<section class="text-center mb-4">
+  <div class="row ">
+    
+    <!--Col1-->
+    <div class="col-lg-3 col-md-6 mb-4  wow fadeInLeftBig" data-cat="star-wars"  data-wow-duration="1s">
+      <div class="card" id="col1">
+        
+        <div class="view overlay">
+          <img class="card-img-top " src="img/catalog/rise.jpg" alt="Star Wars: The Rise of Skywalker">
+          <a href="star-wars.html">
+            <div class="mask rgba-white-slight wow zoomIn"></div>
+          </a>
+       </div>
+      
+       <div class="card-body text-center">
+         <a href="star-wars.html" class="grey-text">
+           <h5>Star-Wars</h5>
+         </a>
+         <h5>
+           <strong>
+             <a href="star-wars.html" class="dark-grey-text">Star Wars: The Rise of Skywalker 
+               <span class="bdge badge-pill danger-color">NEW</span></a>
+           </strong>
+         </h5>
+       </div>
+
+      </div>
+      
+    </div>
+      <!--Col2-->
+    <div class=" col-lg-3 col-md-6  wow fadeIn" data-cat="star-wars"  data-wow-duration="1s">
+      <div class="card">
+        
+        <div class="view overlay">
+          <img class="card-img-top" src="img/catalog/asoka.jpg" alt="Асока">
+          <a href="asoka.html">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+       </div>
+      
+       <div class="card-body text-center mb-4">
+         <a href="" class="grey-text">
+           <h5>Star-Wars</h5>
+         </a>
+         <h5>
+           <strong>
+             <a href="asoka.html" class="dark-grey-text text-center">Асока 
+               
+           </strong>
+         </h5>
+       </div>
+
+      </div>
+      
+    </div>
+      <!--Col3-->
+    <div class=" col-lg-3 col-md-6 mb-4  wow fadeIn" data-cat="ru"  data-wow-duration="1s">
+      <div class="card">
+        
+        <div class="view overlay">
+          <img class="card-img-top" src="img/catalog/war.jpg" alt="Война и мир">
+          <a href="voinaimir.html">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+       </div>
+      
+       <div class="card-body text-center mb-4">
+         <a href="voinaimir.html" class="grey-text">
+           <h5>Русская литература</h5>
+         </a>
+         <h5>
+           <strong>
+             <a href="voinaimir.html" class="dark-grey-text"> Война и мир
+               
+           </strong>
+         </h5>
+       </div>
+
+      </div>
+      
+    </div>
+      <!--Col4-->
+    <div class=" col-lg-3 col-md-6 mb-4  wow fadeInRightBig" data-cat="ru"  data-wow-duration="1s">
+      <div class="card">
+        
+        <div class="view overlay">
+          <img class="card-img-top" src="img/catalog/prestuplenie.jpg" alt="Преступление и наказание">
+          <a href="prestuplenie.html">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+       </div>
+      
+       <div class="card-body text-center">
+         <a href="prestuplenie.html" class="grey-text">
+           <h5>Русская литература</h5>
+         </a>
+         <h5>
+           <strong>
+             <a href="prestuplenie.html" class="dark-grey-text">Преступление и наказание 
+               </a>
+           </strong>
+         </h5>
+       </div>
+
+      </div>
+      
+    </div>
+
+    
+
+    
+  </div>
+  <div class="row">
+    <!--nextCol1-->
+    <div class=" col-lg-3 col-md-6 mb-4  wow fadeInLeftBig" data-cat="witcher"  data-wow-duration="1s">
+      <div class="card">
+        
+        <div class="view overlay">
+          <img class="card-img-top" src="img/catalog/witcher.jpg" alt="Ведьмак: Последнее желание">
+          <a href="witcher.html">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+       </div>
+      
+       <div class="card-body text-center">
+         <a href="witcher.html" class="grey-text">
+           <h5>Ведьмак</h5>
+         </a>
+         <h5>
+           <strong>
+             <a href="witcher.html" class="dark-grey-text">Ведьмак: Последнее желание 
+               </a>
+           </strong>
+         </h5>
+       </div>
+
+      </div>
+      
+    </div>
+      <!--nextCol2-->
+    <div class=" col-lg-3 col-md-6 mb-4  wow fadeIn" data-cat="dc"  data-wow-duration="1s">
+      <div class="card">
+        
+        <div class="view overlay">
+          <img class="card-img-top" src="img/catalog/dedpul.jpg" alt="Дедпул">
+          <a href="ded.html">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+       </div>
+      
+       <div class="card-body text-center mb-4">
+         <a href="ded.html" class="grey-text">
+           <h5>Комиксы</h5>
+         </a>
+         <h5>
+           <strong>
+             <a href="ded.html" class="dark-grey-text"> ТЫ  ДЭДПУЛ! 
+               <span class="bdge badge-pill danger-color">NEW</span></a>
+           </strong>
+         </h5>
+       </div>
+
+      </div>
+      
+    </div>
+      <!--nextCol3-->
+    <div class=" col-lg-3 col-md-6 mb-4  wow fadeIn " data-cat="dc" data-wow-duration="1s">
+      <div class="card">
+        
+        <div class="view overlay">
+          <img class="card-img-top" src="img/catalog/logan.jpg" alt="logan">
+          <a href="logan.html">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+       </div>
+      
+       <div class="card-body text-center">
+         <a href="logan.html" class="grey-text">
+           <h5>Комиксы</h5>
+         </a>
+         <h5>
+           <strong>
+             <a href="logan.html" class="dark-grey-text" style="font-size: 13px; font-weight: bolder">Росомаха. Старик Логан. Золотая коллекция Marvel
+               <span class="bdge badge-pill danger-color">NEW</span></a>
+           </strong>
+         </h5>
+       </div>
+
+      </div>
+      
+    </div>
+      <!--nextCol4-->
+    <div class=" col-lg-3 col-md-6 mb-4 wow fadeInRightBig" data-cat="dc"  data-wow-duration="1s">
+      <div class="card" >
+        
+        <div class="view overlay">
+          <img class="card-img-top" src="img/catalog/batman.jpg" alt="batman">
+          <a href="batman.html">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+       </div>
+      
+       <div class="card-body text-center">
+         <a href="batman.html" class="grey-text">
+           <h5>Комиксы</h5>
+         </a>
+         <h5>
+           <strong>
+             <a href="batman.html" class="dark-grey-text">Бэтмен. Убийственная шутка 
+              </a>
+           </strong>
+         </h5>
+       </div>
+
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+
+      </div>
+    </div>
+  </main>
+  
+
+<!-- Footer -->
+<footer id="footer" class="page-footer font-small mdb-color darken-3 pt-4">
+
+   <!--Grid row-->
+<div class="row pt-4 wow zoomInDown" id="google-maps">
+
+  <!--Grid column-->
+  <div class="col-md-12 mb-4" >
+
+    <!--Card-->
+    <div class="card card-cascade narrower">
+
+      <!--Card image-->
+      <div class="view view-cascade gradient-card-header mdb-color darken-3">
+        <h1 class="pt-4 pl-4 text-center">Мы находимся тут:</h1>
+      </div>
+      <!--/Card image-->
+
+      <!--Card content-->
+      <div class="card-body card-body-cascade text-center mdb-color darken-3">
+
+        <!--Google map-->
+        <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="height: 400px">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.3281425281543!2d44.42064481586363!3d48.64183742388342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x410532b923d22031%3A0x4f1b80edb40f3f47!2z0JLQvtC70JPQow!5e0!3m2!1sru!2sru!4v1591457607103!5m2!1sru!2sru" 
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+
+      </div>
+      <!--/.Card content-->
+
+    </div>
+    <!--/.Card-->
+
+  </div>
+  <!--Grid column-->
+
+</div>
+<!--Grid row-->
+  
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3" id="call">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Связь с нами:</h5>
+        <a href="https://vk.com/alexalderr">Создатель сайта</a>
+      <p>Почта: alfer10112001@gmail.com</p>
+
+      </div>
+      <!-- Grid column -->
+      
+      
+
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3" id="links">
+
+        <!-- Links -->
+        <h5 class="text-uppercase text-md-left">Ссылки</h5>
+
+        <ul class="list-unstyled text-md-left">
+          
+          <li>
+            <a href="#!">Твич</a>
+          </li>
+          <li>
+            <a href="#!">Ютуб</a>
+          </li>
+          <li>
+            <a href="#">На главную</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      
+
+        
+
+        
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+ 
+
+  <!-- Copyright -->
+  <div class="footer-copyright mdb-color darken-3 text-center py-3">
+    
+    <marquee behavior="scroll" direction="left">© Все права защищены презитентом РФ. 
+      <a href="#">Bibiateka(сайт разработал Алферов Александр)</a>
+    </marquee>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+  
+  <script src="/js/jquery.vide.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+   <script>
+     var wow = new WOW(
+  {
+    boxClass:     'wow',      // класс, скрывающий элемент до момента отображения на экране (по умолчанию, wow)
+    animateClass: 'animated', // класс для анимации элемента (по умолчанию, animated)
+    offset:       0,          // расстояние в пикселях от нижнего края браузера до верхней границы элемента, необходимое для начала анимации (по умолчанию, 0)
+    mobile:       true,       // включение/отключение WOW.js на мобильных устройствах (по умолчанию, включено)
+    live:         true,       // поддержка асинхронно загруженных элементов (по умолчанию, включена)
+    callback:     function(box) {
+      // функция срабатывает каждый раз при старте анимации
+      // аргумент box — элемент, для которого была запущена анимация
+    },
+    scrollContainer: null // селектор прокручивающегося контейнера (опционально, по умолчанию, window)
+  }
+);
+wow.init();
+   </script>
+
+<script defer src="https://lk.easynetshop.ru/frontend/v5/ens-a6035f24.js"></script>
+<link href="https://lk.easynetshop.ru/frontend/v5/ens-a6035f24.css" rel="stylesheet">
+    
+</body>
+</html>
